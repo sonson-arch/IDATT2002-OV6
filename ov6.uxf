@@ -1,9 +1,9 @@
-<diagram program="umletino" version="15.1"><zoom_level>1</zoom_level><element><id>UMLClass</id><coordinates><x>2570</x><y>850</y><w>140</w><h>50</h></coordinates><panel_attributes>Arbeidstasjon
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>238</x><y>175</y><w>98</w><h>35</h></coordinates><panel_attributes>Arbeidstasjon
 --
 -arbeidstasjon_nr {PK}
 -plassering (VARCHAR)
 -informasjon
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2520</x><y>600</y><w>140</w><h>120</h></coordinates><panel_attributes>Ordre
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>0</y><w>98</w><h>84</h></coordinates><panel_attributes>Ordre
 --
 -ordre_nr {PK}
 -ordre_dato (DATE)
@@ -12,75 +12,72 @@
 -kunde_id* {FK}
 -betalings_status
 -avtalt_rabatt
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2220</x><y>610</y><w>140</w><h>50</h></coordinates><panel_attributes>Kunde
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>7</y><w>98</w><h>35</h></coordinates><panel_attributes>Kunde
 --
 -kunde_id {PK}
 -kunde_navn (VARCHAR)
--kunde_adresse (VARCHAR)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2990</x><y>740</y><w>140</w><h>30</h></coordinates><panel_attributes>Stoltype
+-kunde_adresse (VARCHAR)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>539</x><y>84</y><w>98</w><h>35</h></coordinates><panel_attributes>Stoltype
 --
-stoltype_navn {PK}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>3000</x><y>850</y><w>140</w><h>30</h></coordinates><panel_attributes>Stolmodell
+stoltype_navn {PK}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>546</x><y>175</y><w>98</w><h>35</h></coordinates><panel_attributes>Stolmodell
 --
-stolmodell_navn {PK}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>3000</x><y>960</y><w>140</w><h>40</h></coordinates><panel_attributes>Standardstol
+stolmodell_navn {PK}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>546</x><y>287</y><w>98</w><h>28</h></coordinates><panel_attributes>Standardstol
 --
 -pris
--lagerbeholdning</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2740</x><y>850</y><w>140</w><h>40</h></coordinates><panel_attributes>Spesialstol
+-lagerbeholdning</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>364</x><y>175</y><w>98</w><h>28</h></coordinates><panel_attributes>Spesialstol
 --
--Spesialstol_navn {PK}</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3060</x><y>770</y><w>6</w><h>14</h></coordinates><panel_attributes>lt=-
+-Spesialstol_navn {PK}</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>119</y><w>42</w><h>70</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2=0..1
-er av </panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2990</x><y>620</y><w>140</w><h>40</h></coordinates><panel_attributes>Produksjon
+er av </panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>539</x><y>14</y><w>98</w><h>28</h></coordinates><panel_attributes>Produksjon
 --
 -antall
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>3060</x><y>730</y><w>13</w><h>5</h></coordinates><panel_attributes>lt=-
-m1=0..*
-m2=0..*
-</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2560</x><y>990</y><w>140</w><h>70</h></coordinates><panel_attributes>Deltype
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>245</x><y>322</y><w>98</w><h>49</h></coordinates><panel_attributes>Deltype
 --
 -Deltype_navn {PK} - eks. stolbein
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2830</x><y>990</y><w>140</w><h>70</h></coordinates><panel_attributes>Del
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>427</x><y>273</y><w>98</w><h>49</h></coordinates><panel_attributes>Del
 --
 del_nr {PK}
 del_navn - eks. malm stolbein
 del_farge
 del_pris
-del_beskrivelse</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>2770</x><y>730</y><w>140</w><h>40</h></coordinates><panel_attributes>Rull
+del_beskrivelse</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>385</x><y>91</y><w>98</w><h>28</h></coordinates><panel_attributes>Rull
 --
 rull_nr* {PK}
 del_nr* {FK}
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2360</x><y>630</y><w>25</w><h>5</h></coordinates><panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>98</x><y>21</y><w>182</w><h>35</h></coordinates><panel_attributes>lt=-
 m1=1..1
 m2=0..*
 gjennomfører &gt;
-&lt; blir bestilt av</panel_attributes><additional_attributes>11;20;240;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2590</x><y>780</y><w>140</w><h>40</h></coordinates><panel_attributes>Stoffrull
+&lt; blir bestilt av</panel_attributes><additional_attributes>11;20;240;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>259</x><y>126</y><w>98</w><h>28</h></coordinates><panel_attributes>Stoffrull
 --
 Stoffrull_nr {PK}
 Deltype_nr* {FK}
-meter</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2620</x><y>900</y><w>8</w><h>15</h></coordinates><panel_attributes>lt=-
+meter</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>203</y><w>56</w><h>133</h></coordinates><panel_attributes>lt=-
 m1=1..*
 m2= 1..1
 finnes i &gt;
-&lt; har</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>3060</x><y>670</y><w>10</w><h>13</h></coordinates><panel_attributes>lt=-
+&lt; har</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>35</y><w>70</w><h>63</h></coordinates><panel_attributes>lt=-
 m1=0..n
 m2=0..1
-teaches to &gt;</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2800</x><y>620</y><w>140</w><h>40</h></coordinates><panel_attributes>Bestilling
+teaches to &gt;</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>406</x><y>14</y><w>98</w><h>28</h></coordinates><panel_attributes>Bestilling
 --
 -bestilling_id{PK}
--d</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2660</x><y>640</y><w>21</w><h>5</h></coordinates><panel_attributes>lt=-
+-d</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>28</y><w>147</w><h>35</h></coordinates><panel_attributes>lt=-
 m1=1..1
 m2=1..*
 inneholder &gt;
-&lt; kommer fra</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>Relation</id><coordinates><x>2930</x><y>640</y><w>11</w><h>4</h></coordinates><panel_attributes>lt=-
-m1=0..n</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2880</x><y>860</y><w>19</w><h>5</h></coordinates><panel_attributes>lt=-
+&lt; kommer fra</panel_attributes><additional_attributes>10;20;190;20</additional_attributes></element><element><id>Relation</id><coordinates><x>497</x><y>28</y><w>77</w><h>28</h></coordinates><panel_attributes>lt=-
+m1=0..n</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>182</y><w>98</w><h>35</h></coordinates><panel_attributes>lt=-
 m1=0..1
 m2=1..1
 er en &gt;
-&lt; inneholder</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>3060</x><y>880</y><w>11</w><h>13</h></coordinates><panel_attributes>lt=-
+&lt; inneholder</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>196</y><w>77</w><h>105</h></coordinates><panel_attributes>lt=-
 m1=0..1
 m2=1..1
 er en &gt;
-&lt; inneholder</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2700</x><y>1020</y><w>21</w><h>5</h></coordinates><panel_attributes>lt=-
+&lt; inneholder</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>294</y><w>147</w><h>35</h></coordinates><panel_attributes>lt=-
 m1=1..1
 m2=0..*
 bruker &gt;
